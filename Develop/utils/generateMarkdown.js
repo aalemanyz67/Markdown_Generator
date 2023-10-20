@@ -11,7 +11,7 @@ function renderLicenseBadge(license) {
   }else if (license === 'Apache 2.0') {
     badge = '![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
   }else if (license === 'Eclipse Public License 1.0'){
-    badge = '![License: Esclipse Public License 1.0]`(https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)'
+    badge = '![License: Esclipse Public License 1.0](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)'
   }else{
     badge = ''
   }
@@ -56,7 +56,7 @@ function generateMarkdown(answer) {
   ## ${renderLicenseSection(answer.license)} ${renderLicenseBadge(answer.license)}
   ### ${renderLicenseLink(answer.license)}
 
-  ## Table of Contents:
+  ##Table of Contents:
   ### *[License](#license)
   ### *[installation](#installation)
   ### *[Usage](#usage)
@@ -64,18 +64,18 @@ function generateMarkdown(answer) {
   ### *[Tests](#tests)
   ### *[Questions](#questions)
 
-  ## Installation:
+  ##Installation:
   ### In order for the app to function you must install:
   ### ${answer.installation}
 
-  ## Usage:
+  ##Usage:
   ### How can your project be used?
   ### ${answer.usage}
 
-  ## Contributors:
+  ##Contributors:
   ### ${answer.contributions}
 
-  ## Tests: 
+  ##Tests: 
   ### To run this app, run the following commands in your terminal:
   ### ${answer.test}
 
@@ -83,7 +83,7 @@ function generateMarkdown(answer) {
   ### If you have any questions about the app, you can contact me at either
   ### Github: https://github.com/${answer.futureQuestions}
   ###or
-  ### Email: ${answer.email}
+  ###Email: ${answer.email}
 
 `;
 }
