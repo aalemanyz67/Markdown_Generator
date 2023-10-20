@@ -32,8 +32,8 @@ Image shows questions being answered by user.
 README.md file is generated.
 ![Alt text](images/step.png)
 
-## Colaborators and Resources
-No other Colaborators.
+## Collaborators and Resources
+No other Collaborators.
 
 Resources:
 VS Code
